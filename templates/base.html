@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/base.css">
+    <title>BASE</title>
+</head>
+<body>
+<div class="header">
+    <!-- чорна полоска з кнопками, можна просто копіювати і вставити, видаливши посилання на сторінку з відповідно створюваної вами сторінки та додати посилання на головну(цю) сторінку-->
+    <div class="header-base">
+        <div class="header-line">
+            <header>
+                <div class="name"><h1>VofkPizza</h1></div>
+                <div class="menu-items">
+                    <div><a class="main-menu-item" href="{{ url_for('home') }}">Головна</a></div>
+                    <div><a class="main-menu-item" href="{{ url_for('shop') }}">Меню</a></div>
+                    <div><a class="main-menu-item" href="{{ url_for('about') }}">Про нас</a></div>
+                    <div><a class="main-menu-item" href="{{ url_for('feedback') }}">Зворотній зв'язок</a></div>
+                    <div><a class="main-menu-item" href="{{ url_for('login') }}">Реєстрація/Вхід</a></div>
+                    <div><a class="main-menu-item" href="{{ url_for('discount') }}">Акції</a></div>
+                    <div><a class="main-menu-item" href="{{ url_for('cart') }}">Замовлення</a></div>
+                </div>
+            </header>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="italy"> <!--вставляти на кожну сторінку, це прапор італії ліворуч-->
+        <div class="green-stripe"></div>
+        <div class="white-stripe"></div>
+        <div class="red-stripe"></div>
+    </div>
+
+    <div class="right-content">
+        {% block content %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* base */
+.header-line {
+  position: relative;
+}
+
+.header-line header {
+  display: flex;
+  min-height: 50px;
+}
+
+.name {
+  min-width: 200px;
+  color: white;
+}
+
+.italy {
+  display: flex;
+}
+
+.right-content {
+  width: 100%;
+  padding: 20px;
+}
+
+a.main-menu-item {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  left: 350px;
+  top: 10px;
+  font-size: 25px;
+}
+
+.green-stripe, .white-stripe, .red-stripe {
+  height: 100%;
+  /* Видаляємо position: absolute; та left: 2; */
+}
+
+.green-stripe {
+  background-color: green;
+  width: 15px;
+}
+
+.white-stripe {
+  background-color: white;
+  width: 15px;
+}
+
+.red-stripe {
+  background-color: red;
+  width: 15px;
+}
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  color: #000000;
+  padding: 20px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Меню */
+.menu-grid {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.menu-category {
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 225px;
+  height: 250px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 0 10px 0 10px;
+  margin-bottom: 5px;
+}
+
+.menu-item img {
+  max-height: 125px;
+}
+
+.menu-item form {
+  padding: 10px;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  min-height: 100%;
+}
+
+.pizza-image {
+  max-width: 125px;
+  max-height: 150px;
+  border-radius: 8px;
+}
+
+.pizza-info {
+  margin-top: 5px;
+}
+
+.pizza-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.pizza-price {
+  font-size: 16px;
+  color: green;
+}
+
+.pizza-ingredients {
+  font-size: 14px;
+  color: #555;
+}
+
+/* about */
+.vofkpizzaph {
+  width: 512px;
+  height: 512px;
+  max-width: 100%; 
+}
+
+
+.text-about {
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  list-style-type: none;
+  max-width: 100%; 
+}
+
+.about-us-content {
+  display: flex;
+}
+/* home */
+.pizzaa-main {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  top: 53%; 
+  left: 41.5%;
+}
+
+.text-main {
+  font-size: 25px;
+  max-width: 100%;
+}
+
+
+/* admin */
+.bg-white {
+  margin-left: 75px; /* Відступ праворуч від смуг */
+  margin-top: 0; /* Відступ зверху */
+  position: relative;
+  color: #333; /* Колір тексту */
+  max-width: calc(100% - 50px); /* Максимальна ширина з урахуванням відступу від смуг */
+}
+/* Заголовок Адмін-панелі */
+.text-3xl {
+  text-align: left; /* Текст вирівняно ліворуч */
+}
+/* Таблиці */
+table {
+  width: 100%; /* Ширина таблиці */
+  border-collapse: collapse; /* Забираємо проміжки між клітинками */
+}
+
+table th,
+table td {
+  padding: 10px; /* Відступи в таблиці */
+  text-align: left; /* Вирівнювання тексту в клітинках */
+  border: 1px solid #ddd; /* Кордони таблиці */
+}
+
+thead {
+  background-color: #f9f9f9; /* Світлий фон для заголовків таблиці */
+}
+
+tr:hover {
+  background-color: #f1f1f1; /* Ефект наведення на рядок */
+}
+
+/* Текст у таблиці */
+.text-xs {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+/* Відступи між секціями */
+.mb-8 {
+  margin-bottom: 40px;
+}

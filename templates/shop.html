@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Меню{% endblock %}
+{% block content %}
+
+    <div class="menu-grid">
+        {% for category, items in menu.items() %}
+            <div class="menu-category">
+                <h2>{{ category | title }}</h2>
+                {% for item in items %}
+                    <div class="menu-item">
+                        <div></div>
+                        <div>
+                            <img src="{{ item.image }}" alt="{{ item.name }}" class="pizza-image">
+                            <div class="pizza-info">
+                                <div class="pizza-name">{{ item.name }}</div>
+                                <span class="pizza-price">{{ item.price }}</span>
+                                <div class="pizza-ingredients">{{ item.ingredients }}</div>
+                            </div>
+                        </div>
+                        <form action="{{ url_for('add_to_cart') }}" method="post">
+                            <input type="hidden" name="item_name" value="{{ item.name }}">
+                            <input type="hidden" name="item_price" value="{{ item.price }}">
+                            <input type="hidden" name="item_image" value="{{ item.image }}">
+                            <button type="submit">Додати до кошика</button>
+                        </form>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

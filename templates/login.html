@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Вхід обліковий запис{% endblock %}
+{% block content %}
+
+<div class="login-page">
+    <div class="circle"></div>
+    <div class="login-form-container">
+        <h1>Вхід обліковий запис</h1>
+        <form method="POST">
+            <input type="email" name="email" placeholder="Пошта" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit" class="button">Увійти</button>
+            <div class="divider">або</div>
+            <a href="{{ url_for('user.register') }}" class="button">Реєстрація</a>
+        </form>
+    </div>
+</div>
+    
+</div>
+
+{% endblock %}
